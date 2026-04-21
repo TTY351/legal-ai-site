@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 const CONFIG = {
-    apiKey: "v2DTtPqZMyPGMPaZ2wdQSAo8AfPJ9hia",
+    apiKey: "ovtnSNxAHInGSsDvLuAGDcDznOaekQWl",
     assistantId: "2046240450227244224",
     apiUrl: "https://yuanqi.tencent.com/openapi/v1/agent/chat/completions"
 };
