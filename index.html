@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>律知校园 - 智能法律咨询助手</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app-container">
+    <!-- 折叠开关 -->
+    <button id="toggle-sidebar" class="fold-btn">≡</button>
+
+    <!-- 左侧边栏 -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">⚖️</div>
+            <div class="site-title">律知校园</div>
+            <div class="site-subtitle">大学生法律咨询助手</div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="section-title">工具栏</div>
+            <button id="clear-chat" class="sidebar-btn">🗑️ 清空对话</button>
+            <button id="voice-input" class="sidebar-btn">🎤 语音提问</button>
+            <button id="theme-toggle" class="sidebar-btn">🌙 切换模式</button>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="section-title">咨询分类</div>
+            <div class="tag-group">
+                <span class="tag">实习就业</span>
+                <span class="tag">校园纠纷</span>
+                <span class="tag">合同审查</span>
+                <span class="tag">维权指导</span>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="section-title">常见问题</div>
+            <button class="sidebar-mini-btn">兼职不发工资</button>
+            <button class="sidebar-mini-btn">实习合同注意事项</button>
+            <button class="sidebar-mini-btn">校园欺凌如何处理</button>
+            <button class="sidebar-mini-btn">隐私被泄露怎么办</button>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="section-title">法律文书模板</div>
+            <button class="sidebar-mini-btn temp-btn">投诉信</button>
+            <button class="sidebar-mini-btn temp-btn">仲裁申请书</button>
+            <button class="sidebar-mini-btn temp-btn">实习协议要点</button>
+            <button class="sidebar-mini-btn temp-btn">维权流程</button>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="section-title">典型案例</div>
+            <button class="sidebar-mini-btn case-btn">兼职欠薪案例</button>
+            <button class="sidebar-mini-btn case-btn">欺凌维权案例</button>
+            <button class="sidebar-mini-btn case-btn">合同陷阱案例</button>
+            <button class="sidebar-mini-btn case-btn">个人信息保护</button>
+        </div>
+    </aside>
+
+    <!-- 右侧聊天区 -->
+    <main class="chat-main">
+        <div class="chat-box">
+            <div id="chat-messages" class="messages"></div>
+            <div class="input-bar">
+                <label for="file-upload" class="upload-icon">📎</label>
+                <input type="file" id="file-upload" style="display:none;">
+                <input type="text" id="user-input" placeholder="请输入法律问题…">
+                <button id="send-btn" class="send-btn">发送</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
